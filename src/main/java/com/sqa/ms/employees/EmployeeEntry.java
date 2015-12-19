@@ -26,6 +26,8 @@ public class EmployeeEntry {
 
 	private static String[] ages;
 
+	private static List<Employee> employees;
+
 	private static String[] jobTitles;
 
 	private static String[] names;
@@ -51,10 +53,7 @@ public class EmployeeEntry {
 			// Convert the input from user to a number
 			numEmployees = Integer.parseInt(scanner.nextLine());
 			// Initialize the new Arrays to the size requested by user
-			newNames = new String[numEmployees];
-			newAges = new String[numEmployees];
-			newAddresses = new String[numEmployees];
-			newJobTitles = new String[numEmployees];
+
 			// Use a loop to call the addEmployee method for each employee that
 			// you want to add to the application
 			for (int i = 0; i < numEmployees; i++) {
