@@ -21,7 +21,7 @@ package com.sqa.ms.employees;
  * @since 1.0
  *
  */
-public interface iPerson {
+public interface IPerson {
 
 	final static int MAX_AGE = 110;
 
