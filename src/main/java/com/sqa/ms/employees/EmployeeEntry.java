@@ -22,7 +22,7 @@ import java.util.Scanner;
  */
 public class EmployeeEntry {
 
-	private static String[] addresses;
+	private static String[] address;
 
 	private static String[] ages;
 
@@ -102,7 +102,7 @@ public class EmployeeEntry {
 		// For the length of all the newly entered employees...
 		for (int i = 0; i < names.length; i++) {
 			// Display their respective information
-			System.out.println(i + 1 + ") Name:" + names[i] + " Age:" + ages[i] + " Address:" + addresses[i]
+			System.out.println(i + 1 + ") Name:" + names[i] + " Age:" + ages[i] + " Address:" + address[i]
 					+ " Job Title:" + jobTitles[i]);
 		}
 	}
@@ -142,13 +142,13 @@ public class EmployeeEntry {
 			// Create an array with the size of both new and old arrays
 			String[] mergedNames = new String[names.length + newNames.length];
 			String[] mergedAges = new String[ages.length + newAges.length];
-			String[] mergedAddresses = new String[addresses.length + newAddresses.length];
+			String[] mergedAddresses = new String[address.length + newAddresses.length];
 			String[] mergedJobTitles = new String[jobTitles.length + newJobTitles.length];
 			// Add the system variables to the local merged array variables
 			for (int i = 0; i < names.length; i++) {
 				mergedNames[i] = names[i];
 				mergedAges[i] = ages[i];
-				mergedAddresses[i] = addresses[i];
+				mergedAddresses[i] = address[i];
 				mergedJobTitles[i] = jobTitles[i];
 			}
 			// Add the new value variables to the local merged array variables
@@ -161,12 +161,12 @@ public class EmployeeEntry {
 			// Set the system variables to the merged array values
 			names = mergedNames;
 			ages = mergedAges;
-			addresses = mergedAddresses;
+			address = mergedAddresses;
 			jobTitles = mergedJobTitles;
 		} else {
 			// Just set the new values to the regular variables
 			names = newNames;
-			addresses = newAddresses;
+			address = newAddresses;
 			ages = newAges;
 			jobTitles = newJobTitles;
 		}

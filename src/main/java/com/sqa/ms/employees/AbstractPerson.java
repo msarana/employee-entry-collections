@@ -23,7 +23,7 @@ package com.sqa.ms.employees;
  */
 public class AbstractPerson implements IPerson {
 
-	private int address;
+	private String address;
 	private int age;
 
 	/**
@@ -35,7 +35,7 @@ public class AbstractPerson implements IPerson {
 	/**
 	 * @return the address
 	 */
-	public int getAddress() {
+	public String getAddress() {
 		return this.address;
 	}
 
@@ -67,7 +67,7 @@ public class AbstractPerson implements IPerson {
 	 * @param address
 	 *            the address to set
 	 */
-	public void setAddress(int address) {
+	public void setAddress(String address) {
 		this.address = address;
 	}
 
